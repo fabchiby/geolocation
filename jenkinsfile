@@ -20,10 +20,14 @@ pipeline {
                 sh 'mvn test'
             }
         }
-        
+          stage('6Figures') {
+            steps {
+                echo '6figure-loading'
+            }
+        }
           stage('Deploy') {
             steps {
-                echo 'i did it'
+                echo 'I WILL SOAR'
             }
         }
     }
